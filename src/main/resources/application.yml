@@ -1,0 +1,20 @@
+# 基础配置文件
+
+spring:
+  profiles:
+    active: dev
+  http:
+    encoding:
+      force: true
+      charset: utf-8
+      enabled: true
+  mvc:
+    throw-exception-if-no-handler-found: true
+  resources:
+    add-mappings: false
+
+server:
+  servlet:
+    context-path: /v1
+  tomcat:
+    uri-encoding: UTF-8
